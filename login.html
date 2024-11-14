@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="form-html">
+<head>
+    <meta charset="UTF-8">
+    <meta
+    name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn/SignUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="form-body">
+    <div class="form-container">
+        <input type="radio" id="signin" name="tab" checked>
+        <label class="form-label" for="signin">Sign In</label>
+        <input type="radio" id="signup" name="tab">
+        <label class="form-label" for="signup">Sign Up</label>
+ 
+    <div class="form signin-form">
+        <h2>Sign In</h2>
+        <form action="#" method="POST">
+             <input type="text" name="username" placeholder="User Name" required>
+             <input type="password" name="password" placeholder="password" required>
+             <button type="submit">Sign In</button>
+                <p>Don't have an account?<label for="signup">Sign Up Here</label></p>
+        </form>
+    </div>
+    <div class="form signup-form">
+        <h2>Sign Up</h2>
+        <form action="#" method="POST">
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>        
+            <button type="submit">Sign Up</button>
+            <p>Already have an account?<label for="signin">Sign In Here</label> </p>
+        </form>
+    </div>
+</div>
+    </body>
