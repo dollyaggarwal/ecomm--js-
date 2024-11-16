@@ -165,6 +165,7 @@ background: linear-gradient(135deg,#3c1404, #ff6d53);
   }
   
   .product {
+    position: relative;
     background-color: #fff;
     padding: 0.75em;
     border-radius: 8px;
@@ -179,7 +180,8 @@ background: linear-gradient(135deg,#3c1404, #ff6d53);
   }
   .product img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: contain;
     border-radius: 8px 8px 0 0;
     animation: fadeIn 1s ease-out forwards;
   }
@@ -187,12 +189,33 @@ background: linear-gradient(135deg,#3c1404, #ff6d53);
   .product h3 {
     font-size: 1em;
     margin: 0.5em 0;
+    min-height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
   }
   
   .product p {
     font-size: 0.9em;
     color: #ff6347;
+    margin-top: auto;
   }
+  .quantity-input {
+    width: 60px;
+    margin-left: 10px;
+}
+.badge-danger {
+  background-color: #dc3545;
+}
+
+.error-message {
+  color: #dc3545;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
   
   .testimonials {
     background-color: #191919;
@@ -405,6 +428,9 @@ form p {
 form p label {
   color: #fd8181;
   cursor: pointer;
+}
+form p label:hover{
+color: #ec5454;
 }
 
 

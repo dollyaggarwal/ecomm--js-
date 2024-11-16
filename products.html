@@ -10,8 +10,23 @@
 </head>
 <body>
 <div class="products-container">
+    <div class="d-flex align-items-center mt-3 gap-4">
+        <input type="text" id="search" class="form-control p-3" name="search" placeholder="Search for products..." style="flex:0 0 73%;">
+        <div class="select-wrapper" style="flex: 0 0 24%;">
+            <select class="form-control p-3" id="price-range">
+                <option value="">Select Price Range</option>
+                <option value="0-50">Under $50</option>
+                <option value="51-100">$51 - $100</option>
+                <option value="101-200">$101 - $200</option>
+                <option value="201-300">$201 - $300</option>
+                <option value="301-500">$301 - $500</option>
+                <option value="500-1000">$500 - $1000</option>
+              </select>
+        </div>
+    </div>
 <h2 class="text-center fw-semibold mb-3">E-Commerce Products</h2>
 <div id="product-list" class="row"></div>
+<div id="error-message" class="error-message"></div>
 
 </div>
 
